@@ -69,7 +69,7 @@ namespace Lab8.Green
             
             public void Print()
             {
-                Console.WriteLine($"{_name} {_surname} - средний балл: {AverageMark:F2}");
+                return;
             }
         }
         
@@ -166,13 +166,7 @@ namespace Lab8.Green
             }
             public void Print()
             {
-                Console.WriteLine($"Группа: {_name}, средний балл: {AverageMark:F2}");
-    
-                for (int i = 0; i < _students.Length; i++)
-                {
-                    Console.Write("  ");
-                    _students[i].Print();
-                }
+                return;
             }
         }
 
