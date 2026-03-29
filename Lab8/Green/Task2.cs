@@ -114,25 +114,9 @@ namespace Lab8.Green
                 }
             }
             
-            public void Print()
+            public new void Print()
             {
-                
-                Console.Write("Оценки: ");
-                for (int i = 0; i < _marks.Length; i++)
-                {
-                    if (_marks[i] != 0)
-                    {
-                        Console.Write(_marks[i] + " ");
-                    }
-                    else
-                    {
-                        Console.Write(" - ");
-                    }
-                }
-                Console.WriteLine();
-                Console.WriteLine($"Средний балл: {AverageMark:F2}");
-                Console.WriteLine($"Все оценки 4 и выше: {IsExcellent}");
-                Console.WriteLine();
+                return;
             }
         }
         public class Human
@@ -151,7 +135,7 @@ namespace Lab8.Green
 
             public void Print()
             {
-                Console.WriteLine($"Студент: {_name} {_surname}");
+                return;
             }
         }
     }
